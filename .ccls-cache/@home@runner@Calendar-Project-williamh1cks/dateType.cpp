@@ -3,7 +3,7 @@
 using namespace std;
 
 //Integer array used to determine maximum value of day. Doesn't account for leap years.
-int const days[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int const days[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 //Constructors
 dateType::dateType()
@@ -110,7 +110,7 @@ int dateType::numDaysInMonth()
 {
   if (isLeapYear(getYear()) && month == 2)
     return 29;
-  return days[getMonth() - 1];
+  return days[getMonth()];
 }
 
 //Precond: The year is initialized
@@ -155,7 +155,7 @@ void dateType::printDate()
 int dateType::numDaysPassed()
 {
   int sum = getDay();
-  for (int i = 0; i != getMonth() - 1; i++)
+  for (int i = 0; i != getMonth(); i++)
     {
       sum += days[i];
     }
