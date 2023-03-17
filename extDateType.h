@@ -13,6 +13,7 @@ class extDateType : public dateType
   void setMonth(int m); //Sets month name
   void setDate(int m, int d, int yr); //Sets date, now includes month name
   void futureDate(int numDays); //Advances date, needed to change month
+  string getMonthName(); //Fetches monthName, used in calendarType
 
   //Constructors
   extDateType();

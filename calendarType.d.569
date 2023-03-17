@@ -1,0 +1,2 @@
+calendarType.o: calendarType.cpp calendarType.h extDateType.h dateType.h \
+  dayType.h

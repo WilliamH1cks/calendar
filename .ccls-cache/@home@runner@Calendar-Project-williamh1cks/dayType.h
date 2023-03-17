@@ -10,6 +10,7 @@ class dayType
   void printDay(); //Prints the current day
   void addDays(int i); //Adds i to dayNum and finds associated day using dayName[]
   string getDay(); //Fetches cuurent day
+  int getDayNum(); //Fecthes dayNum
   string getNextDay(); //Fetches next day (day of dayNum + 1)
   string getPrevDay(); //Fetches previous day (day of (dayNum + 7) - 1)
   

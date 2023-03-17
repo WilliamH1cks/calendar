@@ -49,6 +49,13 @@ string dayType::getDay()
 }
 
 //Precond: dayType with defined day
+//Postcond: returns dayNum
+int dayType::getDayNum()
+{
+  return dayNum;
+}
+
+//Precond: dayType with defined day
 //Postcond: returns the next day
 string dayType::getNextDay()
 {

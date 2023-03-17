@@ -24,7 +24,7 @@ void dateType::setYear(int yr)
 {
   if (yr < 1900)
   {
-    cout << "Error: Year must be at the earliest 1900. Returining to default value of 1900...";
+    //cout << "Error: Year must be at the earliest 1900. Returining to default value of 1900...";
     yr = 1900;
     };
   year = yr;
@@ -42,7 +42,7 @@ void dateType::setMonth(int m)
 {
   if (m < 1 || m > 12)
   {
-    cout << endl << "Error: Month was not between 1 and 12, inclusive. Returning to default value of 1..." << endl;
+    //cout << endl << "Error: Month was not between 1 and 12, inclusive. Returning to default value of 1..." << endl;
     m = 1;
   };
   month = m;

@@ -25,11 +25,18 @@ void extDateType::printLongDate()
   cout << "Date in word format: " << monthName << " " << getDay() << ", " << getYear() << endl;
 }
 
+//Precond: The month name is initialized
+//Postcond: The month name is returned
+string extDateType::getMonthName()
+{
+  return monthName;
+}
+
 //Precond: The date and month name is initialized
 //Postcond: (Month) (Year) is printed
 void extDateType::printLongMonthYear()
 {
-  cout << "Date in word format: " << monthName << " " << getYear() << endl;
+  cout << monthName << " " << getYear() << endl;
 }
 
 //Precond: The date and month name is initialized
